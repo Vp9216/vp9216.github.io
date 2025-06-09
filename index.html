@@ -2,53 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dwrika Digital Web Services</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background:blue;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
       color: #333;
     }
-    .logo-section {
-      text-align: center;
-      padding: 30px;
-      background-color:black;
-    }
-    .logo-section img {
-      width: 150px;
-    }
-    .intro-section {
-      background-color:red;
+    .header, .section, .footer {
       padding: 40px 20px;
       text-align: center;
     }
-    .intro-section h1 {
+    .header {
+      background-color: #fff;
+    }
+    .header img {
+      width: 120px;
+    }
+    .intro {
+      background-color: #e6f2ff;
+    }
+    .intro h1 {
       color: #2c3e50;
+      margin-bottom: 10px;
     }
-    .services-section {
-      background-color:blue;
-      padding: 20px;
-      text-align: center;
-    }
-    .services-section h2 {
+    .section-title {
+      font-size: 24px;
       color: #1a1a1a;
-    }
-    .services-section p {
-      font-size: 16px;
-      line-height: 1.6;
-    }
-    .contact-section {
-      background-color:pink;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    .contact-section h2 {
       margin-bottom: 20px;
     }
-    .contact-section form {
+    .services p, .why-us p, .how-it-works p, .pricing p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 8px 0;
+    }
+    .services, .why-us, .how-it-works, .pricing {
+      background-color: #ffffff;
+      margin: 10px 0;
+      border-radius: 10px;
+      padding: 30px 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .contact {
+      background-color: #fef6e4;
+    }
+    .contact form {
       max-width: 500px;
       margin: auto;
       text-align: left;
@@ -57,7 +57,7 @@
       width: 100%;
       padding: 10px;
       margin-bottom: 12px;
-      border-radius: 4px;
+      border-radius: 5px;
       border: 1px solid #ccc;
     }
     button {
@@ -71,35 +71,63 @@
     button:hover {
       background-color: darkred;
     }
+    .footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Logo -->
-  <div class="logo-section">
+  <!-- Header / Logo -->
+  <div class="header">
     <img src="file_00000000784461f9a0b2405f60eee1cc.png" alt="Dwrika Digital Logo">
   </div>
 
-  <!-- Introduction -->
-  <div class="intro-section">
+  <!-- Welcome Section -->
+  <div class="intro section">
     <h1>Welcome to Dwrika Digital Web Services</h1>
     <p>We are a smart team helping website owners manage their blogs, apply SEO, and grow online. Already handled 30+ WordPress SEO blogs successfully.</p>
   </div>
 
-  <!-- Services -->
-  <div class="services-section">
-    <h2>Our Services</h2>
-    <p>
-      ✅ WordPress Blog Setup & Design<br>
-      ✅ Daily Blog Uploading & SEO Optimization<br>
-      ✅ Affiliate & AdSense Integration<br>
-      ✅ Full Website Management (Clients Focus)
-    </p>
+  <!-- Why Choose Us -->
+  <div class="why-us section">
+    <h2 class="section-title">💡 Why Choose Us?</h2>
+    <p>✔ 100% Result-Driven Service</p>
+    <p>✔ 3+ Years WordPress Experience</p>
+    <p>✔ Dedicated Blog Management for Clients</p>
+    <p>✔ Earn More While We Manage Everything</p>
   </div>
 
-  <!-- Contact -->
-  <div class="contact-section">
-    <h2>Contact Me</h2>
+  <!-- Our Services -->
+  <div class="services section">
+    <h2 class="section-title">🛠️ Our Services</h2>
+    <p>✅ WordPress Blog Setup & Design</p>
+    <p>✅ Daily Blog Uploading & SEO Optimization</p>
+    <p>✅ Affiliate & AdSense Integration</p>
+    <p>✅ Full Website Management (Client Focused)</p>
+  </div>
+
+  <!-- Pricing Plans -->
+  <div class="pricing section">
+    <h2 class="section-title">💰 Plans & Pricing</h2>
+    <p><strong>Basic:</strong> ₹999/month – Blog Uploading + SEO</p>
+    <p><strong>Standard:</strong> ₹1499/month – Blog + SEO + Ad Integration</p>
+    <p><strong>Premium:</strong> ₹1999/month – Full Website Management</p>
+  </div>
+
+  <!-- How It Works -->
+  <div class="how-it-works section">
+    <h2 class="section-title">⚙️ How It Works</h2>
+    <p>Step 1: You provide blog content or topic</p>
+    <p>Step 2: We upload, design, and optimize</p>
+    <p>Step 3: You earn from ads/affiliate while we manage!</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact section">
+    <h2 class="section-title">📩 Contact Me</h2>
     <form>
       <label>Your Name</label>
       <input type="text" name="name" required>
@@ -109,6 +137,11 @@
       <textarea rows="5" name="message" required></textarea>
       <button type="submit">Send</button>
     </form>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer section">
+    © 2025 Dwrika Digital | All rights reserved | Email: vikash7877sharma@gmail.com
   </div>
 
 </body>
