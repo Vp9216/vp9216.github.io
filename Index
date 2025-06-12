@@ -49,6 +49,12 @@ font-family: Arial, sans-serif;
   </style>
 </head>
 <body>
+<!-- Navigation Bar -->
+<nav style="background-color:#a5172f; padding:10px;">
+  <a href="#" style="color:white; margin:10px; text-decoration:none;">Home</a>
+  <a href="#services" style="color:white; margin:10px; text-decoration:none;">Services</a>
+  <a href="#contact" style="color:white; margin:10px; text-decoration:none;">Contact</a>
+</nav>
 
   <!-- Logo -->
   <img src="logo.png" alt="Dwrika Digital Logo">
